@@ -1,100 +1,54 @@
-CSE360_HW4_AnayShirolkar
-This repository contains the implementation for Homework 4 of CSE360 by Anay Shirolkar. The project builds on previous homework submissions, adding enhanced functionality such as staff roles, review systems, messaging features, trusted reviewers, and question-answer discussion threads.
+# CSE360_HW4_AnayShirolkar
 
-🌟 Features
+This repository contains the implementation for Homework 4 of CSE360 by Anay Shirolkar. The project builds upon previous assignments, introducing advanced features like role-based access, reviews, messaging, trusted reviewers, and a discussion board system.
 
-User Authentication & Role Management
+---
 
-Student and Instructor roles
+## 🌟 Features
 
-Reviewer role with approval workflow
+- 🔐 User Authentication & Role Management
+  - Student, Instructor, and Reviewer roles
+  - Admin setup with invitation codes
+- 💬 Discussion Forum
+  - Students can post questions
+  - Threaded replies to questions and answers
+- ⭐ Review System
+  - Users can review content (questions or answers)
+  - Reviewer requests and approval system
+- ✅ Trusted Reviewers
+  - Students can mark reviewers as trusted
+  - Trusted reviews appear with priority
+- 📩 Messaging
+  - Users can send messages to other users
+- ⚙️ Admin Tools
+  - Suspend user accounts
+  - Reset user passwords
 
-Discussion System
+---
 
-Students can ask questions
+## 🛠 Technologies Used
 
-Users can reply to questions and answers
+- Java 17+
+- JavaFX
+- H2 SQL Embedded Database
+- JDBC (Java Database Connectivity)
 
-Review System
+---
 
-Review content and rate it
+## 📁 Project Structure
 
-Request to become a reviewer
+- `/FoundationCode`
+  - `User.java` – User model class
+  - `StartCSE360.java`, `FirstPage.java`, `AdminSetupPage.java` – JavaFX Application Pages
+- `/databasePart1`
+  - `DatabaseHelper.java` – All SQL logic and schema migration
+- `/HW2`
+  - `Review.java`, `Question.java`, `Answer.java`, `Message.java` – Supporting data models
 
-Trusted Reviewer System
+---
 
-Students can add trusted reviewers
+## 🔧 How to Run
 
-Reviews from trusted reviewers are prioritized
-
-Messaging
-
-Users can send and receive messages
-
-Admin Tools
-
-Suspend user accounts
-
-Reset passwords
-
-Database
-
-Uses H2 SQL database
-
-Handles migrations, table creation, and persistence
-
-📁 Project Structure
-
-/FoundationCode
-
-User.java — user model with attributes and methods
-
-AdminSetupPage.java, FirstPage.java — JavaFX application UI
-
-/databasePart1
-
-DatabaseHelper.java — handles all database operations
-
-/HW2
-
-Review.java, Message.java, Question.java, Answer.java, etc. — models used in the system
-
-README.md
-
-🔧 How to Run
-
-Clone the repository: git clone https://github.com/anayshirolkar/CSE360_HW4_AnayShirolkar.git
-
-Open in an IDE (e.g. IntelliJ or Eclipse)
-
-Ensure JavaFX is set up and linked
-
-Run StartCSE360.java
-
-🛠 Requirements
-
-Java 17+
-
-JavaFX SDK
-
-H2 Database (embedded)
-
-📦 Dependencies
-
-java.sql.*
-
-javafx.base
-
-javafx.controls
-
-javafx.fxml
-
-java.util.*
-
-📌 Notes
-
-Invitation codes are required to register new users
-
-Reviewer role is only granted after instructor approval
-
-Trusted reviewers can be prioritized per user
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/anayshirolkar/CSE360_HW4_AnayShirolkar.git
